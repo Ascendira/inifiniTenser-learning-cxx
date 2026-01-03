@@ -17,3 +17,5 @@ target("summary")
     set_kind("binary")
     add_deps("test")
     add_files("learn/summary.cpp")
+    -- 新增下面这行，用于在 Linux 下链接 pthread 库
+    add_syslinks("pthread")
